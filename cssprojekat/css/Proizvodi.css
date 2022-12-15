@@ -168,3 +168,19 @@ img {
     display: initial;
   }
 }
+@media screen and (min-width: 300px) and (max-width: 450px) {
+  nav li {
+    display: block;
+    transform: translateX(-13%);
+    text-align: center;
+  }
+  nav li a {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  nav li a:hover {
+    font-size: 30px;
+  }
+}
