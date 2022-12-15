@@ -1,205 +1,170 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
-nav{
-    width: 100%;    
-    display: flex;
-    justify-content: center;
-    background-color: black;
-}
-
-nav ul{
-    list-style: none;
-    transform: translateX(-3.5%);
-}
-nav li{
-    display: inline;
-    margin: 0px 35px;
-    list-style: none;
-    text-align: center;
-}
-nav li a{
-    color: white;
-    font-size: 30px;
-    font-family: Arial;
-    text-decoration: none;
-    transition: 0.5s ease-in-out;
-    text-align: center;
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: black;
 }
 
-nav li a:hover{
-    font-weight: bold;
-    font-size: 40px;
-    text-decoration: underline;
+nav ul {
+  list-style: none;
+  transform: translateX(-3.5%);
+}
+nav li {
+  display: inline;
+  margin: 0px 35px;
+  list-style: none;
+  text-align: center;
+}
+nav li a {
+  color: white;
+  font-size: 30px;
+  font-family: Arial;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+  text-align: center;
 }
 
-.Proizvodi{
-    width: 90%;
-    height: 3000px;
-    margin: 0px auto;
+nav li a:hover {
+  font-weight: bold;
+  font-size: 40px;
+  text-decoration: underline;
 }
 
-.sekcija{
-    height: 20%;
-    width: 100%;
-    margin-bottom: 50px;
-    display: block;
+.Proizvodi {
+  width: 90%;
+  height: 3000px;
+  margin: 0px auto;
 }
 
-
-.levo{
-    float: left;
-    text-align: center;
-    height: 100%;
-    width: 30%;
-    transform: translateX(20%);
+.sekcija {
+  height: 20%;
+  width: 100%;
+  margin-bottom: 50px;
+  display: block;
 }
 
-.desno{
-    float: right;
-    text-align: center;
-    height: 100%;
-    width: 30%;
-    transform: translateX(-20%);
+.levo {
+  float: left;
+  text-align: center;
+  height: 100%;
+  width: 30%;
+  transform: translateX(20%);
 }
 
-img{
-    height: 100%;
-    width: 100%;
-}
-#slika{
-    height: 85%;
-    width: 100%;
-    transition: 1s ease-in-out;
-}
-.levo #slika{
-    float: right;
-}
-#tekst{
-    opacity: 0;
-    width: 100%;
-}
-#naslov{
-    width: 100%;
+.desno {
+  float: right;
+  text-align: center;
+  height: 100%;
+  width: 30%;
+  transform: translateX(-20%);
 }
 
-.Proizvodi .sekcija .desno:hover #slika{
-    float: left;
-    height: 60%;
-    width: 30%;
+img {
+  height: 100%;
+  width: 100%;
+}
+#slika {
+  height: 85%;
+  width: 100%;
+  transition: 1s ease-in-out;
+}
+.levo #slika {
+  float: right;
+}
+#tekst {
+  opacity: 0;
+  width: 100%;
+}
+#naslov {
+  width: 100%;
 }
 
-.Proizvodi .sekcija .desno:hover #naslov{
-    animation-name: animacija1;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-direction: alternate;
-}
-.Proizvodi .sekcija .desno:hover #tekst{
-    animation-name: animacija2;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-direction: alternate;
+.Proizvodi .sekcija .desno:hover #slika {
+  float: left;
+  height: 60%;
+  width: 30%;
 }
 
-.Proizvodi .sekcija .levo:hover #slika{
-    float: right;
-    height: 60%;
-    width: 30%;
+.Proizvodi .sekcija .desno:hover #naslov {
+  animation-name: animacija1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+.Proizvodi .sekcija .desno:hover #tekst {
+  animation-name: animacija2;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
 }
 
-.Proizvodi .sekcija .levo:hover #naslov{
-    animation-name: animacija1;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-direction: alternate;
+.Proizvodi .sekcija .levo:hover #slika {
+  float: right;
+  height: 60%;
+  width: 30%;
 }
-.Proizvodi .sekcija .levo:hover #tekst{
-    animation-name: animacija2;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-direction: alternate;
+
+.Proizvodi .sekcija .levo:hover #naslov {
+  animation-name: animacija1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+.Proizvodi .sekcija .levo:hover #tekst {
+  animation-name: animacija2;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
 }
 
 @keyframes animacija1 {
-    0%{
-        opacity: 0;
-    }
-    5%{
-        display: inherit;
-    }
-    15%{
-        opacity: 0;
-    }
-    30%{
-        opacity: 0;
-    }
-    45%{
-        opacity: 0;
-    }
-    60%{
-        opacity: 0;
-    }
-    75%{
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  5% {
+    display: inherit;
+  }
+  15% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
 }
 @keyframes animacija2 {
-    15%{
-        opacity: 0;
-    }
-    30%{
-        opacity: 0;
-    }
-    45%{
-        opacity: 0;
-    }
-    60%{
-        opacity: 0;
-    }
-    75%{
-        opacity: 0;
-    }
-    90%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-        display: initial;
-    }
-}
-
-@media screen and (min-width:768px) and (max-width:992px){
-    nav li{
-        display: block;
-        transform: translateX(-13%);
-        text-align: center;
-    }
-    .Proizvodi .sekcija .levo:hover #slika{
-        float: none;
-        height: 85%;
-        width: 100%;
-    }
-    .Proizvodi .sekcija .levo:hover {
-        margin-bottom: 100em;
-    }
-    .Proizvodi .sekcija .desno:hover #slika{
-        float: none;
-        height: 85%;
-        width: 100%;
-    }
-    .Proizvodi .sekcija .levo:hover #tekst{
-        animation-name: animacija2;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-direction: alternate;
-    }
-    @keyframes animacija1 {}
-    @keyframes animacija2 {
-        100%{
-            opacity: 1;
-            display: initial;
-        }
-    }
+  15% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    display: initial;
+  }
 }

@@ -1,128 +1,126 @@
-body{
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-nav{
-    width: 100%;    
-    display: flex;
-    justify-content: center;
-    background-color: black;
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: black;
 }
 
-nav ul{
-    list-style: none;
-    transform: translateX(-3.5%);
+nav ul {
+  list-style: none;
+  transform: translateX(-3.5%);
 }
-nav li{
-    display: inline;
-    margin: 0px 35px;
-    list-style: none;
-    text-align: center;
+nav li {
+  display: inline;
+  margin: 0px 35px;
+  list-style: none;
+  text-align: center;
 }
-nav li a{
-    color: white;
-    font-size: 30px;
-    font-family: Arial;
-    text-decoration: none;
-    transition: 0.5s ease-in-out;
-    text-align: center;
-}
-
-nav li a:hover{
-    font-weight: bold;
-    font-size: 40px;
-    text-decoration: underline;
+nav li a {
+  color: white;
+  font-size: 30px;
+  font-family: Arial;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+  text-align: center;
 }
 
-h1{
-    text-align: center;
-}
-.okvir{
-    width: 100%;
-    margin-left: auto;
-    border: 2px solid black;
-    display: flex;
-    align-items: center;
-    transform: translate(-105%);
-    animation-name: animacija2;
-    animation-delay: 2s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-.okvir ul{
-    margin-left: 30px;
-}
-.okvir img{
-    height: inherit;
-    width: 200px;
-    float: right;
-    margin: 10px 10px 10px auto;
-    opacity: 0;
-    animation-name: animacija3;
-    animation-delay: 3s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-.okvir div{
-    display: none;
-}
-@media screen and (min-width:300px) and (max-width:650px){
-    .okvir img{
-        height: inherit;
-        width: 15%; 
-    }
-    nav li{
-        display: block;
-    }
+nav li a:hover {
+  font-weight: bold;
+  font-size: 40px;
+  text-decoration: underline;
 }
 
-#otekst{
-    transform: translateX(110%);
-    animation-name: animacija1;
-    animation-duration: 1s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
+h1 {
+  text-align: center;
+}
+.okvir {
+  width: 100%;
+  margin-left: auto;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  transform: translate(-105%);
+  animation-name: animacija2;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.okvir ul {
+  margin-left: 30px;
+}
+.okvir img {
+  height: inherit;
+  width: 200px;
+  float: right;
+  margin: 10px 10px 10px auto;
+  opacity: 0;
+  animation-name: animacija3;
+  animation-delay: 3s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.okvir div {
+  display: none;
+}
+
+#otekst {
+  transform: translateX(110%);
+  animation-name: animacija1;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes animacija1 {
-    100%{
-        transform: translateX(40px);
-    }
+  100% {
+    transform: translateX(40px);
+  }
 }
 
 @keyframes animacija2 {
-    100%{
-        transform: translate(0px);
-    }
+  100% {
+    transform: translate(0px);
+  }
 }
 
 @keyframes animacija3 {
-    100%{
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
-@media screen and (min-width:300px) and (max-width:414px){
-    .okvir{
-        display: block;
-        width: 90%;
-        margin: 0px auto;
-    }
-    .okvir div{
+@media screen and (min-width: 300px) and (max-width: 450px) {
+  .okvir {
+    transform: translate(-140%);
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+  }
+  .okvir div {
     display: initial;
+  }
+  .okvir ul {
+    display: none;
+  }
+  body {
+    text-align: center;
+    font-size: 14px;
+  }
+  .okvir img {
+    float: none;
+    height: inherit;
+    width: inherit;
+    margin: 0px auto;
+  }
+
+  @keyframes animacija1 {
+    100% {
+      transform: translateX(0%);
     }
-    .okvir ul{
-        display: none;
-    }
-    body{
-        text-align: center;
-        font-size: 14px;
-    }
-    .okvir img{
-        float: none;
-        height: inherit;
-        width: inherit;
-        margin: 0px auto;
-    }
+  }
 }
